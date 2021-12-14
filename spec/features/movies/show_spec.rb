@@ -7,7 +7,7 @@ RSpec.describe 'Movies show page' do
     @movie_2 = @studio_1.movies.create!(title: "Gremlins", creation_year: "1995", genre: "Fantasy")
     @actor_1 = @movie_1.actors.create!(name: "Harrison Ford", age: 78)
     @actor_2 = @movie_1.actors.create!(name: "Natalie Portman", age: 40)
-    @actor_2 = @movie_1.actors.create!(name: "Adam Driver", age: 35)
+    @actor_3 = @movie_1.actors.create!(name: "Adam Driver", age: 35)
   end
 
   it 'shows the title, creation year and genre of the movie' do
