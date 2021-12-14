@@ -33,4 +33,14 @@ RSpec.describe 'Movies show page' do
     expect(page).to have_content("Natalie Portman")
     expect(page).to_not have_content("Zach Gilligan")
   end
+
+  it 'displays a form to add an actor' do
+    visit "/movies/#{@movie_1.id}"
+
+    fill_in('Name', with: 'Harrison Ford')
+    fill_in('Age', with: 78)
+    click_button('Submit')
+
+    expect(current_path).to eq("/movies/#{@movie_1.id}")
+  end
 end
