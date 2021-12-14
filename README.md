@@ -60,7 +60,7 @@ Some of the initial migrations and model set up has been done for you.
 ## User Stories
 
 ```
-Story 1
+Story 1 ----- DONE
 Studio Index
 
 As a user,
@@ -70,7 +70,7 @@ And underneath each studio, I see the titles of all of its movies.
 ```
 
 ```
-Story 2
+Story 2 
 Movie Show
 
 As a user,
