@@ -70,7 +70,7 @@ And underneath each studio, I see the titles of all of its movies.
 ```
 
 ```
-Story 2 
+Story 2 ----- DONE
 Movie Show
 
 As a user,
