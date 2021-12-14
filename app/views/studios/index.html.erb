@@ -3,5 +3,8 @@
 <% @studios.each do |studio| %>
   <h3><%= studio.name %></h3>
   <p>Located in: <%= studio.location %></p>
+  <p>Movies from Studio: <% studio.movies.each do |movie| %>
+    <%= movie.title %>
+    <% end %>
   <hr>
 <% end %>
