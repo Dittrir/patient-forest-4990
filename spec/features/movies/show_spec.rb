@@ -17,4 +17,10 @@ RSpec.describe 'Movies show page' do
     expect(page).to have_content(@movie_1.creation_year)
     expect(page).to have_content(@movie_1.genre)
   end
+
+  it 'shows the actors from youngest to oldest' do
+    visit "/movies/#{@movie_1.id}"
+    
+    expect(page).to have_content(51.0)
+  end
 end

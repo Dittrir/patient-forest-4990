@@ -4,6 +4,10 @@ class Actor < ApplicationRecord
   validates_presence_of :age
 
   def self.youngest_to_oldest
-    Actor.all.order(:age)
+    all.order(:age)
+  end
+
+  def self.average_age
+    average(:age).to_f.round(2)
   end
 end

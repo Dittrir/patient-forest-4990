@@ -23,5 +23,9 @@ RSpec.describe Actor, type: :model do
     it 'shows the actors from youngest to oldest' do
       expect(@movie_1.actors.youngest_to_oldest).to eq ([@actor_3, @actor_2, @actor_1])
     end
+
+    it 'shows the average age of all the movies actors' do
+      expect(@movie_1.actors.average_age).to eq(51)
+    end
   end
 end
