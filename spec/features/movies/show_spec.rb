@@ -28,10 +28,11 @@ RSpec.describe 'Movies show page' do
   it 'does not show actors that are not part of the movie' do
     visit "/movies/#{@movie_1.id}"
 
-    expect(page).to have_content("Harrison Ford")
-    expect(page).to have_content("Adam Driver")
-    expect(page).to have_content("Natalie Portman")
-    expect(page).to_not have_content("Zach Gilligan")
+    expect(page).to have_content(@actor_1.name)
+    expect(page).to have_content(@actor_2.name)
+    expect(page).to have_content(@actor_3.name)
+
+    expect(page).to_not have_content(@actor_4.name)
   end
 
   it 'displays a form to add an actor' do
