@@ -1,0 +1,7 @@
+<h1>Studios</h1>
+<hr>
+<% @studios.each do |studio| %>
+  <h3><%= studio.name %></h3>
+  <p>Located in: <%= studio.location %></p>
+  <hr>
+<% end %>
